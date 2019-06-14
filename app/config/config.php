@@ -1,6 +1,7 @@
 <?php
 define(PATH_URL,'/drd3d/');
 define(URL_BASE,'/drd3d/');
+define(URL_ASSETS,'/drd3d/public/');
 
 define(BD_HOST,'localhost');
 define(BD_USER,'root');
