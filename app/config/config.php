@@ -8,4 +8,6 @@ define(BD_USER,'root');
 define(BD_PASSWORD,'');
 define(BD_NAME,'drd3d');
 define(BD_TYPE,'mysql');
+
+date_default_timezone_set("America/Mexico_City");
 ?>
