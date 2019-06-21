@@ -29,26 +29,10 @@ class Encuesta{
     	$datos = [$sucursal, date("Y-m-d"), date("H:i:s"), $tipo_C, $destino_C, $area_C, $comentario, $nombre, $telefono, $correo];
     	$id_Encuesta = $this->db->insert("encuesta", $datos, "id_Sucursal,fecha,hora,tipo_Comentario,destinatario_Comentario,area_destinatario,comentario,nombre_contacto,telefono_contacto,correo_contacto");
 
-    	if(!$id_Encuesta){
-    		echo "ERROR!: No se pudo registrar la encuesta";
-    		return false;
-    	}
 
-    	if($respuestas){
-	    	$errores = 0;
-	    	foreach($respuestas as $resp){
-	    		$inserta = $this->bd->insert("respuesta", [$resp["id_Pregunta"], $id_Encuesta, $resp["valor"]], "id_Pregunta,id_Encuesta,valor");
-	    		if(!$inserta)
-	    			$errores++;
-	    	}
 
-	    	if($errores){
-	    		echo "ERROR!: No se pudieron registrar $errores respuestas";
-	    		return false;
-	    	}
-    	}
 
-    	return true;
+    	return $id_Encuesta;
     }
 }
 

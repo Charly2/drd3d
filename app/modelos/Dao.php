@@ -70,7 +70,7 @@ class Dao {
             if($where != null)
                 $q .= ' WHERE '.$where;
             if($order != null)
-                $q .= ' ORDER BY '.$order;
+                $q .= ' ORDER BY '.$order.' ASC';
             $this->numResults = null;
             try {
                 $sql = $this->db->prepare($q);
@@ -174,6 +174,20 @@ class Dao {
      
         $values = implode(',',$values);
         $insert .= ' VALUES ('.$values.')';
+        //print_r($insert);
+        try {
+
+            $ins = $this->db->prepare($insert);
+            $ins->execute();
+            return $this->db->lastInsertId();
+
+        } catch (PDOException $e) {
+            return $e->getMessage();
+        }
+    }
+    // INSERT
+    public function query_insert ($insert) {
+
         //print_r($insert);
         try {
 

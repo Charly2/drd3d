@@ -89,7 +89,7 @@ Description:this is responsive css file for mobile and tablet layout
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .welcome-area {
         position: relative;
-        padding: 150px 0;
+        padding: 150px 0 0 0;
 
     }
 

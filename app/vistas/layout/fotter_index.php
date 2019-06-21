@@ -1,4 +1,4 @@
-<a href="#home" class="up_btn scroll"><i class="fas fa-angle-up"></i></a>
+<!--<a href="#home" class="up_btn scroll"><i class="fas fa-angle-up"></i></a>-->
 
 
 <!--:::::jquery.waypoints.min.js :::::::-->

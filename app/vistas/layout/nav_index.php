@@ -1,7 +1,9 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 <!--preload area start-->
 <!-- Preloader -->
-<div class="preloader">
+
+
+<div class="preloader <?=$data?'white':''?>">
     <div class="spinner_wrap">
         <div class="spinner"></div>
     </div>

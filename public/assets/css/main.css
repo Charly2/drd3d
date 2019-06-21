@@ -176,7 +176,7 @@ a.apps_btn,
   text-transform: capitalize;
   font-weight: 700;
   border-radius: 5px;
-  width: 190px;
+  width: 330px;
   transition: all .3s;
 }
 .app-btn:before{
@@ -212,7 +212,7 @@ a.apps_btn,
     color: #364D60;
 }
 .app-btn-icon {
-  font-size: 36px;
+  font-size: 43px;
   /* padding-right: 15px; */
   padding-right: 10px;
   float: left;
@@ -248,6 +248,7 @@ a.apps_btn,
 
 .app-btns.v4 .app-btn-text {
   text-align: left;
+    font-size: 1.8em;
 }
 .app-btns.v4 .app-btn-text small {
   margin: 0;
@@ -257,6 +258,7 @@ a.apps_btn,
 .app-btns.v4 .app-btn-text strong {
   display: block;
   /* font-size: 18px; */
+    font-size: 1.8em;
   color: #fff;
 }
 ..app-btns.v4 app-btn:last-child {
@@ -283,7 +285,18 @@ a.apps_btn,
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #03112e;
+  background-color: #009b7a;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.preloader.white {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-color: #ffffff;
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -324,3 +337,61 @@ a.apps_btn,
   -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
   animation: sk-scaleout 1.0s infinite ease-in-out;
 }
+
+.form-group label{
+    color: #009b7a;
+    font-size: 1.8em;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+.form-group input{
+    border: 0;
+    border-bottom: 3px solid #000388;
+    box-shadow: 0px 20px 30px 0px #dde7ee;
+    font-size: 20px;
+    color: #000388;
+    line-height: 60px;
+    height: 60px;
+    border-top: 1px solid #dde7ee;
+    border-left: 1px solid #dde7ee;
+    border-right: 1px solid #dde7ee;
+    transition: all .5s;
+}
+
+.form-group input::placeholder{
+    line-height: 60px;
+}
+
+.form-control:focus{
+    border: 0;
+    border-bottom: 3px solid #000388;
+    box-shadow: 0px 20px 30px 0px #dde7ee;
+    font-size: 20px;
+    color: #000388;
+    line-height: 60px;
+    height: 60px;
+    border-top: 1px solid #000388;
+    border-left: 1px solid #000388;
+    border-right: 1px solid #000388;
+    transition: all .5s;
+}
+
+.error{
+    border-bottom: 3px solid #d75a4a!important;
+
+    color: #d75a4a!important;
+}
+
+.form-control + span{
+    padding-top: 66px;
+    color: #ff0c0c!important;
+    display: block;
+    opacity: 0;
+}
+
+
+.form-control.error + span{
+    opacity: 1;
+}
+
+

@@ -1,22 +1,17 @@
 
 
-<h1 class="titulo_w">
-    Recopilador de Encuestas<br> de Calidad en el Servicio
-</h1>
-
-
 <div class="welcome-area v4" id="home">
     <div class="container">
         <div class="main_area">
             <div class="row">
                 <div class="col-12">
                     <div class="welcome-text">
-                        <h1>¿Comó desea ayudarnos? </h1>
-                        <p>La información que usted nos proporciona nos <br>ayuda a mejorar nuestro servicio.</p>
+                        <h1>Gracias por  <br> participar en  <br> nuestra encuesta</h1>
+                        <p>Su opinion es muy importante para nosotros, <br>siempre estamos buscando mejorar nuestro sericio.</p>
                     </div>
 
-                    <div class="app-btns v4">
-                        <a href="<?=_setUrl('index/encuesta');?>" class="app-btn align-self-center">
+                    <!--<div class="app-btns v4">
+                        <a href="index/encuesta" class="app-btn align-self-center">
                                 <span class="app-btn-icon">
                                     <i class="fa fa-check-double"></i>
                                 </span>
@@ -24,7 +19,7 @@
                                     <small>Desea hacer un <strong>Evaluación</strong></small>
                                 </span>
                         </a>
-                        <a href="<?=_setUrl('index/comentario');?>" class="app-btn active align-self-center">
+                        <a href="#" class="app-btn active align-self-center">
                                 <span class="app-btn-icon">
                                     <i class="fa fa-pencil"></i>
                                 </span>
@@ -32,7 +27,7 @@
                                     <small>Desea dejar un  <strong>Comentario</strong></small>
                                 </span>
                         </a>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
@@ -94,4 +89,10 @@
     </div>
 </div>
 
-
+<script>
+    $(document).ready(function () {
+        setTimeout(function () {
+            window.location.href = ' <?=_setUrl('index/');?>';
+        },5000);
+    });
+</script>

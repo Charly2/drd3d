@@ -120,10 +120,97 @@ function sendMail ($to,$name,$sub,$html){
 }
 
 
-function getMailLogin($mail,$pass,$nombre){
-    return "<h1>Maquetado de mailing</h1>";
+function getMailLogin($nombre,$tel,$preg,$com="",$suc){
+    $a .=  '
+    
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Demystifying Email Design</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body style="margin: 0; padding: 0;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td style="padding: 10px 0 30px 0;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border: 1px solid #cccccc; border-collapse: collapse;">
+                    <tr>
+                        <td align="center" bgcolor="#ffffff" style="padding: 40px 0 30px 0; color: #153643; font-size: 28px; font-weight: bold; font-family: Arial, sans-serif;">
+                            <img src="http://www.drd3d.com/CursosDRD3D/PlaticasOP_2015/imgs/LOGODRD1.png" alt="Creating Email Magic" width="" height="230" style="display: block;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#ffffff" style="padding: 40px 30px 40px 30px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding: 5px 0 5px 0;color: #153643; font-family: Arial, sans-serif; font-size: 24px;">
+                                        Sucursal: <b>'.$suc.'</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 5px 0 5px 0;color: #153643; font-family: Arial, sans-serif; font-size: 24px;">
+                                        Nombre: <b>'.$nombre.'</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 5px 0 5px 0;color: #153643; font-family: Arial, sans-serif; font-size: 24px;margin-top: 15px">
+                                        Teléfono: <b>'.$tel.'</b>
+                                    </td>
+                                </tr>
 
-}
+
+                                <tr>
+                                    <td style="padding: 5px 0 5px 0;color: #153643; font-family: Arial, sans-serif; font-size: 24px;margin-top: 15px">
+                                        Comentario:
+                                    </td>
+                                </tr>
+                                <tr style="padding: 10px 0 10px 0;">
+                                    <td style=" color: #153643; font-family: Arial, sans-serif; font-size: 20px; line-height: 20px;">
+                                        <b>'.$com.'</b>
+                                    </td>
+                                </tr>
+
+                                <tr style="padding: 100px 0 100px 0;">
+                                    <td>&nbsp;</td>
+                                </tr>
+                                ';
+                                foreach($preg as $p){
+                                $a .= '<tr>
+                                    <td style="padding: 5px 0 5px 0;color: #153643; font-family: Arial, sans-serif; font-size: 24px;margin-top: 15px">
+                                        '.$p["preg"].':
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style=" color: #153643; font-family: Arial, sans-serif; font-size: 20px; line-height: 20px;">
+                                        <b>'.$p["txt"].'</b>
+                                    </td>
+                                </tr>';
+                                }
+                            $a .= '</table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#12a284" style="padding: 30px 30px 30px 30px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="color: #ffffff; font-family: Arial, sans-serif; font-size: 20px;" width="75%">
+                                        <a href="#" style="color: #ffffff;"><font color="#ffffff"></font></a> DRD3D - Recopilador de Encuestas  de Calidad en el Servicio
+                                    </td>
+
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </body>
+    </html>
+    ';
+    return $a;
+    }
 
 function quita_acentos($cadena) {
     $no_permitidas= array ("á","é","í","ó","ú","Á","É","Í","Ó","Ú","ñ","À","Ã","Ì","Ò","Ù","Ã™","Ã ","Ã¨","Ã¬","Ã²","Ã¹","ç","Ç","Ã¢","ê","Ã®","Ã´","Ã»","Ã‚","ÃŠ","ÃŽ","Ã”","Ã›","ü","Ã¶","Ã–","Ã¯","Ã¤","«","Ò","Ã","Ã„","Ã‹");
@@ -132,5 +219,169 @@ function quita_acentos($cadena) {
     return $texto;
 }
 
+function print_preg_tipo1($pre){?>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="titulo_pre"> <?=$pre['texto']?></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="cont_resp">
+                    <div class="resp_item" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="1">
+                        <img src="<?=URL_ASSETS?>assets/img/resp/res_a_1.svg" alt="">
+                        <p>Mala</p>
+                    </div>
+                    <div class="resp_item" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="2">
+                        <img src="<?=URL_ASSETS?>assets/img/resp/res_a_2.svg" alt="">
+                        <p>Regular</p>
+                    </div>
+                    <div class="resp_item" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="3">
+                        <img src="<?=URL_ASSETS?>assets/img/resp/res_a_3.svg" alt="">
+                        <p>Buena</p>
+                    </div>
+                    <div class="resp_item" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="4">
+                        <img src="<?=URL_ASSETS?>assets/img/resp/res_a_4.svg" alt="">
+                        <p>Muy Buena</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<?}
+
+
+function print_preg_tipo2($pre){?>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="titulo_pre"> <?=$pre['texto']?></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="cont_resp">
+                    <div class="resp_item" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="1">
+                        <img src="<?=URL_ASSETS?>assets/img/resp/res_b_2.svg" alt="">
+                        <p>Amable</p>
+                    </div>
+                    <div class="resp_item" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="2">
+                        <img src="<?=URL_ASSETS?>assets/img/resp/res_b_1.svg" alt="">
+                        <p>Descortes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<?}
+
+
+
+function print_preg_tipo3($pre){?>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="titulo_pre"> <?=$pre['texto']?></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="cont_resp">
+                    <div class="resp_item" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="1">
+                        <img src="<?=URL_ASSETS?>assets/img/resp/res_c_1.svg" alt="">
+                        <p class="text_verde">Si</p>
+                    </div>
+                    <div class="resp_item" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="2">
+                        <img src="<?=URL_ASSETS?>assets/img/resp/res_c_2.svg" alt="">
+                        <p class="text_rojo">No</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<?}
+
+function print_preg_tipo4($pre){?>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="titulo_pre"> <?=$pre['texto']?></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="cont_resp">
+                    <div class="resp_item" style="margin-left: 10px" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="1">
+                        <img src="<?=URL_ASSETS?>assets/img/resp/res_d_1.svg" alt="">
+                        <p>Exelente</p>
+                    </div>
+                    <div class="resp_item" style="margin-left: 10px" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="2">
+                        <img src="<?=URL_ASSETS?>assets/img/resp/res_d_2.svg" alt="">
+                        <p>Buena</p>
+                    </div>
+                    <div class="resp_item" style="margin-left: 10px" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="3">
+                        <img src="<?=URL_ASSETS?>assets/img/resp/res_d_3.svg" alt="">
+                        <p>Regular</p>
+                    </div>
+                    <div class="resp_item" style="margin-left: 10px" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="4">
+                        <img src="<?=URL_ASSETS?>assets/img/resp/res_d_4.svg" alt="">
+                        <p>Mala</p>
+                    </div>
+                    <div class="resp_item" style="margin-left: 10px" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="5">
+                        <img src="<?=URL_ASSETS?>assets/img/resp/res_d_5.svg" alt="">
+                        <p>Muy Mala</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<?}
+
+
+function print_preg_tipo5($pre){?>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="titulo_pre"> <?=$pre['texto']?></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="cont_resp">
+                    <div class="resp_item" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="1">
+                        <img src="<?=URL_ASSETS?>assets/img/resp/res_a_1.svg" alt="">
+                        <p>Mala</p>
+                    </div>
+                    <div class="resp_item" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="2">
+                        <img src="<?=URL_ASSETS?>assets/img/resp/res_a_2.svg" alt="">
+                        <p>Regular</p>
+                    </div>
+                    <div class="resp_item" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="3">
+                        <img src="<?=URL_ASSETS?>assets/img/resp/res_a_3.svg" alt="">
+                        <p>Buena</p>
+                    </div>
+                    <div class="resp_item" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="4">
+                        <img src="<?=URL_ASSETS?>assets/img/resp/res_a_4.svg" alt="">
+                        <p>Muy Buena</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<?}
+
 
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
