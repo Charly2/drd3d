@@ -161,7 +161,7 @@ function export (){
     $encu = $db->queryRet("SELECT * FROM encuesta  WHERE id_Sucursal = '".$_PATH[2]."'");
 
     foreach ($encu as $p){
-        print_r($p['comentario']);
+
 
         $arr=[];
         $arr = [$p['id_Encuesta'],$p['fecha'],$p['hora'],$p['nombre_contacto'],$p['telefono_contacto'],$p['comentario']];
