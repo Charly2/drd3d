@@ -138,14 +138,19 @@
     
     
     function send() {
-        $.post( "<?=_setUrl('index/save');?>", {data:_DATOS, comm : $('#_com').val() }).done(function( data ) {
-            console.log(data)
-            setTimeout(function () {
-                window.location.href = ' <?=_setUrl('index/ok');?>';
-            },280);
+
+        if  ($('#_com').val() != ""){
+            $.post( "<?=_setUrl('index/save');?>", {data:_DATOS, comm : $('#_com').val() }).done(function( data ) {
+                console.log(data)
+                setTimeout(function () {
+                    window.location.href = ' <?=_setUrl('index/ok');?>';
+                },280);
 
 
-        });
+            });
+        }
+
+
     }
 
 </script>
