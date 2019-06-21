@@ -82,16 +82,22 @@ function save(){
 
 
     $id_Encuesta = $modelo->registraEncuesta("1",$_SESSION['nombre'],$_SESSION['tel'],"a1@gmail.com",1,"","1",$_POST['comm'],$_POST['data']);
+
+    if (sizeof($_POST['data'])){
+
     $query = "";
     $query .= "INSERT INTO respuesta (	id_Pregunta, id_Encuesta, valor ) VALUES ";
-    for ($i=0;$i<sizeof($_POST['data']);$i++){
-        $query .= "('".$_POST['data'][$i]['id_pregunta']."','$id_Encuesta', '".$_POST['data'][$i]['value']."')";
-        if ($i < (sizeof($_POST['data'])-1) ){
+    for ($i = 0; $i < sizeof($_POST['data']); $i++) {
+        $query .= "('" . $_POST['data'][$i]['id_pregunta'] . "','$id_Encuesta', '" . $_POST['data'][$i]['value'] . "')";
+        if ($i < (sizeof($_POST['data']) - 1)) {
             $query .= ',';
         }
     }
 
     echo $db->query_insert($query);
+
+    }
+
 
     $va = sendMail('papapitufo10@gmail.com','Admnistración DRD',"Encuesta",getMailLogin($_SESSION['nombre'],$_SESSION['tel'],$_POST['data'],$_POST['comm'],"1"));
 
