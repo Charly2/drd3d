@@ -193,7 +193,7 @@ function encuesta_det (){
     $preg = $db->queryRet("SELECT pregunta.texto,pregunta.tipo_Pregunta,respuesta.valor FROM respuesta INNER JOIN pregunta ON respuesta.id_Pregunta = pregunta.id_Pregunta WHERE id_Encuesta = '".$_PATH[2]."'");
 
 
-    $pregs = $db->queryRet("SELECT * FROM encuesta WHERE id_Sucursal = '".$_PATH[2]."'");
+    $pregs = $db->queryRet("SELECT * FROM encuesta WHERE id_Encuesta = '".$_PATH[2]."'");
 
     //prEx($preg);
 
