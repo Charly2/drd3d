@@ -144,16 +144,15 @@ function export (){
     header('Content-Disposition: attachment; filename=data.csv');
     $output = fopen("php://output", "w");
 
-    $arregl = ['id_Encuesta','fecha','hora','nombre_contacto','telefono_contacto'];
+    $arregl = ['id_Encuesta','fecha','hora','nombre_contacto','telefono_contacto',"Comentario"];
 
-    include_once '../modelos/EncuestaModel.php';
-    $modelo  = new Encuesta();
+
 
     $pregac = $db->queryRet("SELECT texto FROM pregunta  WHERE estado_Pregunta = '1'");
 
     foreach ($pregac as $p){
         $arregl[] = $p['texto'];
-    } $arregl[] = "Comentario";
+    }
 
     fputcsv($output,array_map("utf8_decode", $arregl) );
 
@@ -162,14 +161,14 @@ function export (){
     $encu = $db->queryRet("SELECT * FROM encuesta  WHERE id_Sucursal = '".$_PATH[2]."'");
 
     foreach ($encu as $p){
+        print_r($p['comentario']);
+
         $arr=[];
-        $arr = [$p['id_Encuesta'],$p['fecha'],$p['hora'],$p['nombre_contacto'],$p['telefono_contacto']];
+        $arr = [$p['id_Encuesta'],$p['fecha'],$p['hora'],$p['nombre_contacto'],$p['telefono_contacto'],$p['comentario']];
         $preg = $db->queryRet("SELECT respuesta.valor FROM respuesta  WHERE id_Encuesta = '".$p['id_Encuesta']."'");
         foreach ($preg as $p){
             $arr[]=$p['valor'];
         }
-        $arr[] = $p['comentario'];
-        //print_r($arr);
         fputcsv($output, array_map("utf8_decode", $arr));
     }
 
