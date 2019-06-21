@@ -93,15 +93,15 @@ function save(){
 
     echo $db->query_insert($query);
 
-    sendMail('papapitufo10@gmail.com','Admnistración DRD',"Encuesta",getMailLogin($_SESSION['nombre'],$_SESSION['tel'],$_POST['data'],$_POST['comm'],"1"));
+    $va = sendMail('papapitufo10@gmail.com','Admnistración DRD',"Encuesta",getMailLogin($_SESSION['nombre'],$_SESSION['tel'],$_POST['data'],$_POST['comm'],"1"));
 
-    ;
+
 
     unset($_SESSION);
     session_destroy();
 
 
-    prEx($query);
+    prEx($va);
 
 
 };

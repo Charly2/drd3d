@@ -185,7 +185,7 @@
 
 
         });
-        window.location.href = ' <?=_setUrl('index/ok');?>';
+        //window.location.href = ' <?=_setUrl('index/ok');?>';
     }
 
 </script>
