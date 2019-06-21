@@ -36,6 +36,15 @@ function setViewApp($view,$args="",$ver = false){
     include_once '../vistas/layout_app.php';
 }
 
+function setViewApp_SL($view,$args="",$ver = false){
+    if ($ver){
+        print_r($args);
+    }
+    extract($args);
+    $_VIEW = $view;
+    include_once '../vistas/app/vis_'.$_VIEW.".php";
+}
+
 
 
 function _setUrl($url){
@@ -66,11 +75,81 @@ function prEx($r){
 
 
 
-
-
-
-
-
+function repuesta_tipo($ti , $val){
+    switch ($ti){
+        case '1':
+            switch ($val){
+                case '1':
+                        return 'Mala';
+                    break;
+                case '2':
+                        return 'Regular';
+                    break;
+                case '3':
+                        return 'Buena';
+                    break;
+                case '4':
+                        return 'Muy Buena';
+                    break;
+            }
+            break;
+        case '2':
+            switch ($val){
+                case '1':
+                        return 'Amable';
+                    break;
+                case '2':
+                        return 'Descortes';
+                    break;
+            }
+            break;
+        case '3':
+            switch ($val){
+                case '1':
+                        return 'Si';
+                    break;
+                case '2':
+                        return 'No';
+                    break;
+            }
+            break;
+        case '4':
+            switch ($val){
+                case '1':
+                    return 'Exelente';
+                    break;
+                case '2':
+                    return 'Buena';
+                    break;
+                case '3':
+                    return 'Regular';
+                    break;
+                case '4':
+                    return 'Mala';
+                    break;
+                case '5':
+                    return 'Muy Mala';
+                    break;
+            }
+            break;
+        case '5':
+            switch ($val){
+                case '1':
+                    return 'Mala';
+                    break;
+                case '2':
+                    return 'Regular';
+                    break;
+                case '3':
+                    return 'Buena';
+                    break;
+                case '4':
+                    return 'Muy Buena';
+                    break;
+            }
+            break;
+    }
+}
 
 
 function sendMail ($to,$name,$sub,$html){
@@ -118,8 +197,6 @@ function sendMail ($to,$name,$sub,$html){
         return false;
     }   
 }
-
-
 function getMailLogin($nombre,$tel,$preg,$com="",$suc){
     $a .=  '
     
@@ -211,14 +288,12 @@ function getMailLogin($nombre,$tel,$preg,$com="",$suc){
     ';
     return $a;
     }
-
 function quita_acentos($cadena) {
     $no_permitidas= array ("á","é","í","ó","ú","Á","É","Í","Ó","Ú","ñ","À","Ã","Ì","Ò","Ù","Ã™","Ã ","Ã¨","Ã¬","Ã²","Ã¹","ç","Ç","Ã¢","ê","Ã®","Ã´","Ã»","Ã‚","ÃŠ","ÃŽ","Ã”","Ã›","ü","Ã¶","Ã–","Ã¯","Ã¤","«","Ò","Ã","Ã„","Ã‹");
     $permitidas= array ("a","e","i","o","u","A","E","I","O","U","n","N","A","E","I","O","U","a","e","i","o","u","c","C","a","e","i","o","u","A","E","I","O","U","u","o","O","i","a","e","U","I","A","E");
     $texto = str_replace($no_permitidas, $permitidas ,$cadena);
     return $texto;
 }
-
 function print_preg_tipo1($pre){?>
     <div class="container">
         <div class="row">
@@ -250,8 +325,6 @@ function print_preg_tipo1($pre){?>
         </div>
     </div>
 <?}
-
-
 function print_preg_tipo2($pre){?>
     <div class="container">
         <div class="row">
@@ -275,8 +348,6 @@ function print_preg_tipo2($pre){?>
         </div>
     </div>
 <?}
-
-
 
 function print_preg_tipo3($pre){?>
     <div class="container">

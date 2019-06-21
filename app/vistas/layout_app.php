@@ -7,12 +7,11 @@ include_once 'layout/nav_app.php';?>
 
 
 
-    <main class="page-content">
-        <div class="container-fluid">
-            <? include_once 'app/vis_'.$_VIEW.".php";?>
-        </div>
+        <? include_once 'app/vis_'.$_VIEW.".php";?>
+    </div>
 
-    </main>
+
+
 
 
 <?

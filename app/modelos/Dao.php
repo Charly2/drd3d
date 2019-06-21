@@ -127,7 +127,8 @@ class Dao {
             }
 
     }
-    public function queryRet($q,$ver = false) {
+    // SELECT
+    public function queryReett($q,$ver = false) {
 
             $this->numResults = null;
             try {
@@ -139,7 +140,24 @@ class Dao {
                 $this->result = $sql->fetchAll(PDO::FETCH_ASSOC);
                 $this->numResults = count($this->result);
                 $this->numResults === 0 ? $this->result = null : true ;
-                return $sql->fetchAll(PDO::FETCH_ASSOC);
+                return $sql->fetchAll(PDO::FETCH_ASSOC);;
+            } catch (PDOException $e) {
+                return $e->getMessage().''.$e->getTraceAsString().'';
+            }
+
+    }
+    public function queryRet($q,$ver = false) {
+        //print_r($q);
+
+            try {
+                $sql = $this->db->prepare($q);
+                if($ver){
+                    print_r($q);
+                }
+                $sql->execute();
+
+
+                return $sql->fetchAll();
             } catch (PDOException $e) {
                 return $e->getMessage().''.$e->getTraceAsString().'';
             }
