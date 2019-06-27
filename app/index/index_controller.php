@@ -18,9 +18,10 @@ function index (){
 }
 
 function borrar (){
+    global $_SUC;
     unset($_SESSION);
     session_destroy();
-    header('location: /drd3d/index/');
+    header("location: /drd3d/$_SUC/index/");
 }
 
 function ok (){

@@ -14,8 +14,8 @@
             });
 
             function refresh() {
-                if(new Date().getTime() - time >= 30000)
-                   // window.location.href = "<?=_setUrl('index/borrar')?>";
+                if(new Date().getTime() - time >= 1000)
+                    window.location.href = "<?=_setUrl('index/borrar')?>";
                 else
                     setTimeout(refresh, 10000);
             }

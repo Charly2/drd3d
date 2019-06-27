@@ -11,10 +11,18 @@
     .main_conte{
         padding-top: 200px;
     }
+    .salir_{
+        position: absolute;
+        left: 48%;
+        bottom: 40px;
+        z-index: 10000;
+    }
 </style>
 
 
-
+<div onclick="borrar_f()" class="btn btn-danger btn-circle btn-lg salir_">
+    <i class="fa fa-times"></i>
+</div>
 
 
 <div id="fullpage">
@@ -199,4 +207,10 @@
         window.location.href = ' <?=_setUrl('index/ok');?>';
     }
 
+</script>
+
+<script>
+    function borrar_f() {
+        window.location.href = "<?=_setUrl('index/borrar')?>";
+    }
 </script>
