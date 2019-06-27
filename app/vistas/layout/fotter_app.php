@@ -50,8 +50,8 @@
 <script src="<?=URL_ASSETS?>vendor/chart.js/Chart.min.js"></script>
 
 <!-- Page level custom scripts -->
-<script src="<?=URL_ASSETS?>js/demo/chart-area-demo.js"></script>
-<script src="<?=URL_ASSETS?>js/demo/chart-pie-demo.js"></script>
+
+
 
 </body>
 

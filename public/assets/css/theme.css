@@ -299,17 +299,7 @@ welcome area css
 }
 
 .welcome-area.v4:before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: auto;
-    right: -50%;
-    top: -65%;
-    background: url(../img/v4_bg.png);
-    background-repeat: no-repeat;
-    z-index: -2;
-    transform: rotate(-45deg);
+
 }
 
 
@@ -1956,11 +1946,11 @@ html{
     position: absolute;
     width: 100%;
     height: 100%;
-
+    background-size: cover;
     left: 0;
     top: 0;
-    background-image: url(http://www.drd3d.com/images/slider/07DRXD.jpg);
-    opacity: .5;
+    background-image: url(/drd3d/public/img/01_front.jpg);
+    opacity: 1;
 }
 
 .logo_show > *{
@@ -1973,7 +1963,7 @@ html{
     height: 100vh;
     padding-top: 120px;
     position: relative;
-    background: white;
+
 }
 
 .main_conte:before{
@@ -2012,6 +2002,7 @@ html{
     color: rgb(0, 3, 136);
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .cont_resp{
@@ -2096,6 +2087,17 @@ textarea{
 }
 
 
+.position_relative  {
+    position: relative;
+}
+#Capa_1_c{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 55px;
+    z-index: 100;
+}
 /* ANIMATIONS */
 
 @keyframes translateX1 {
@@ -2260,5 +2262,18 @@ textarea{
 
 #qwerty2 .row-keyboard{
     justify-content: center!important;
+}
+
+
+
+.salir_{
+    border-radius: 50%;
+    font-size: 1.5em;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto 0 auto;
 }
 

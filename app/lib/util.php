@@ -48,7 +48,8 @@ function setViewApp_SL($view,$args="",$ver = false){
 
 
 function _setUrl($url){
-    return URL_BASE.$url;
+    global $_SUC;
+    return URL_BASE.$_SUC."/".$url;
 }
 
 function encryptIt( $q ) {
@@ -116,7 +117,7 @@ function repuesta_tipo($ti , $val){
         case '4':
             switch ($val){
                 case '1':
-                    return 'Exelente';
+                    return 'Excelente';
                     break;
                 case '2':
                     return 'Buena';

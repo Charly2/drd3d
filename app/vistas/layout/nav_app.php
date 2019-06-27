@@ -1,7 +1,7 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center ba_white" href="index.html">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center ba_white" href="/drd3d/app/index/index">
         <img src="http://www.drd3d.com/images/LogoColor1.png" alt="" style="display: block;height: 29px;">
     </a>
 
@@ -10,7 +10,7 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="<?=_setUrl('app/index/index')?>">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Inicio</span></a>
     </li>
@@ -66,13 +66,18 @@
             <span>Evaluaciones</span></a>
     </li>
 
+    <!-- Nav Item - Tables -->
+    <li class="nav-item">
+        <a class="nav-link" href="<?=_setUrl('app/index/sucursal_gra')?>">
+            <i class="fas fa-fw fa-chart-bar"></i>
+            <span>Gráficas</span></a>
+    </li>
+
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
 
     <!-- Sidebar Toggler (Sidebar) -->
-    <div class="text-center d-none d-md-inline">
-        <button class="rounded-circle border-0" id="sidebarToggle"></button>
-    </div>
+
 
 </ul>
 <div id="content-wrapper" class="d-flex flex-column">

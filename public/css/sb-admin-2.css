@@ -12063,3 +12063,25 @@ footer.sticky-footer .copyright {
 body.sidebar-toggled footer.sticky-footer {
   width: 100%;
 }
+
+
+
+
+
+
+
+
+._jus{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+._jus > div:first-child{
+  margin-right: 15px;
+}
+
+._jus > div:last-child{
+  margin-left: 15px;
+}

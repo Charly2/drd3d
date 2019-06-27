@@ -1,7 +1,17 @@
 <link rel="stylesheet" type="text/css" href="<?=URL_ASSETS?>assets/css/fullpage.css" />
 
-<img class="img_fott" src="<?=URL_ASSETS?>assets/img/sep.svg" alt="">
-<img class="img_hea" src="<?=URL_ASSETS?>assets/img/sep3.svg" alt="">
+<style>
+    body{
+        background-image: url("/drd3d/public/img/02_bal.jpg");
+        background-size: 100% 100%;
+    }
+    .logo.white{
+        display: none;
+    }
+    .main_conte{
+        padding-top: 200px;
+    }
+</style>
 
 
 
@@ -93,7 +103,7 @@
                     <div class="row">
                         <div class="col-md-12 float-left ">
                             <div class="app-btns v4 text-right">
-                                <a onclick="send()" class="app-btn align-self-center">
+                                <a onclick="send(this)" class="app-btn align-self-center">
                                 <span class="app-btn-icon">
                                     <i class="fa fa-check-double"></i>
                                 </span>
@@ -178,7 +188,8 @@
     });
     
     
-    function send() {
+    function send(e) {
+        $(e).attr('disabled',true);
         $.post( "<?=_setUrl('index/save');?>", {data:_DATOS, comm : $('#_com').val() }).done(function( data ) {
             console.log(data)
 

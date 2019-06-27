@@ -9,13 +9,18 @@ if (function_exists($_PATH[1])){
 
 
 
-function prueba(){
 
-}
 
 
 function index (){
-    setViewIndex('index_pre');
+
+    setViewIndex('index_pre',['data'=>true]);
+}
+
+function borrar (){
+    unset($_SESSION);
+    session_destroy();
+    header('location: /drd3d/index/');
 }
 
 function ok (){
@@ -24,8 +29,8 @@ function ok (){
 function pre (){
     global $_PATH;
 
-    $_SESSION['nombre']=$_PATH[2];
-    $_SESSION['tel']=$_PATH[3];
+    $_SESSION['nombre']=$_PATH[2]?$_PATH[2]:"";
+    $_SESSION['tel']=$_PATH[3]?$_PATH[3]:"";
 
     $_PRE_WHITE = true;
     setViewIndex('index',['data'=>$_PRE_WHITE]);
@@ -33,6 +38,11 @@ function pre (){
 
 function comentario (){
     setViewIndex('comentario');
+}
+
+
+function prueba (){
+    setViewIndex('prueba');
 }
 
 
@@ -70,6 +80,7 @@ function sess (){
 function save(){
     include_once '../modelos/EncuestaModel.php';
 
+    global $_SUC;
 
 
     $db = new Dao();
@@ -81,7 +92,7 @@ function save(){
 
 
 
-    $id_Encuesta = $modelo->registraEncuesta("1",$_SESSION['nombre'],$_SESSION['tel'],"a1@gmail.com",1,"","1",$_POST['comm'],$_POST['data']);
+    $id_Encuesta = $modelo->registraEncuesta($_SUC,$_SESSION['nombre'],$_SESSION['tel'],"a1@gmail.com",1,"","1",$_POST['comm'],$_POST['data']);
 
     if (sizeof($_POST['data'])){
 

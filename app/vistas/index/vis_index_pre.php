@@ -1,5 +1,13 @@
+<style>
+    body{
+        background-image: url("/drd3d/public/img/01_welcome_clean.jpg");
+        background-size: cover;
+    }
+</style>
+
+
 <div class="logo_show">
-    <img src="<?=URL_ASSETS?>assets/img/LOGODRD1.png" alt="">
+
     <div class="effect_1">
         <img src="<?=URL_ASSETS?>assets/img/v3_polygon_1.png" alt="">
     </div>
@@ -48,6 +56,7 @@
 
 <h1 class="titulo_w">
     Recopilador de Encuestas<br> de Calidad en el Servicio
+
 </h1>
 
 
@@ -135,7 +144,10 @@
 
                 <div class="slide">
 
-                    <div class="main_area a_2">
+                    <div class="main_area a_2 position_relative">
+                        <div class="" onclick="bck()" id="Capa_1_c">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve"><g><path style="fill: #009b7a;" d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                        </div>
                         <div class="row">
                             <div class="col-12">
                                 <div class="welcome-text">
@@ -229,9 +241,7 @@
 
 
 <div class="welcome_right" style="bottom: 32%;" id="section1">
-    <div class="welcome-right">
-        <img src="<?=URL_ASSETS?>assets/img/cel2.png" alt="">
-    </div>
+
 
 
     <div class="cross">
@@ -329,13 +339,22 @@
 
 
     function nxt() {
-        if (($('#username').val().length > 7) && ($('#username').val() != "")){
+        /*if (($('#username').val().length > 7) && ($('#username').val() != "" || 1)){
             fullpage_api.moveSlideRight()
         } else{
 
             $('#username').addClass("error");
-        }
+        }*/
+        fullpage_api.moveSlideRight()
     }
+
+
+    function bck() {
+
+        fullpage_api.moveSlideLeft();
+    }
+
+
 
     function cont() {
         window.location.href = "<?=_setUrl('index/pre');?>/"+$('#username').val().substring(0, $('#username').val().length - 1)+"/"+$('#tel').val().substring(0, $('#tel').val().length - 1)

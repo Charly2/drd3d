@@ -1,8 +1,17 @@
 <link rel="stylesheet" type="text/css" href="<?=URL_ASSETS?>assets/css/fullpage.css" />
 
-<img class="img_fott" src="<?=URL_ASSETS?>assets/img/sep.svg" alt="">
-<img class="img_hea" src="<?=URL_ASSETS?>assets/img/sep3.svg" alt="">
-
+<style>
+    body{
+        background-image: url("/drd3d/public/img/02_bal.jpg");
+        background-size: 100% 100%;
+    }
+    .logo.white{
+        display: none;
+    }
+    .main_conte{
+        padding-top: 200px;
+    }
+</style>
 
 
 

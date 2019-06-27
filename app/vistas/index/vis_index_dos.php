@@ -1,4 +1,12 @@
-
+<style>
+    body{
+        background-image: url("/drd3d/public/img/01_welcome_clean.jpg");
+        background-size: cover;
+    }
+    .welcome-area{
+        padding: 200px 0 0 0;
+    }
+</style>
 
 <div class="welcome-area v4" id="home">
     <div class="container">
@@ -6,7 +14,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="welcome-text">
-                        <h1>Gracias por  <br> participar en  <br> nuestra encuesta</h1>
+                        <h1 style="text-transform: uppercase">Gracias por  <br> participar en  <br> nuestra encuesta</h1>
                         <p>Su opinion es muy importante para nosotros, <br>siempre estamos buscando mejorar nuestro sericio.</p>
                     </div>
 
@@ -59,9 +67,7 @@
 
 
 <div class="welcome_right" id="section1">
-    <div class="welcome-right">
-        <img src="<?=URL_ASSETS?>assets/img/cel2.png" alt="">
-    </div>
+
 
 
     <div class="cross">

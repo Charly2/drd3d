@@ -1,4 +1,12 @@
-
+<style>
+    body{
+        background-image: url("/drd3d/public/img/01_welcome_clean.jpg");
+        background-size: cover;
+    }
+    .welcome-area{
+        padding: 200px 0 0 0;
+    }
+</style>
 
 <h1 class="titulo_w">
     Recopilador de Encuestas<br> de Calidad en el Servicio
@@ -35,6 +43,9 @@
                     </div>
                 </div>
             </div>
+            <div onclick="borrar_f()" class="btn btn-danger btn-circle btn-lg salir_">
+                <i class="fa fa-times"></i>
+            </div>
         </div>
     </div>
 </div>
@@ -64,9 +75,6 @@
 
 
 <div class="welcome_right" id="section1">
-    <div class="welcome-right">
-        <img src="<?=URL_ASSETS?>assets/img/cel2.png" alt="">
-    </div>
 
 
     <div class="cross">
@@ -94,4 +102,8 @@
     </div>
 </div>
 
-
+<script>
+    function borrar_f() {
+        window.location.href = "<?=_setUrl('index/borrar')?>";
+    }
+</script>
