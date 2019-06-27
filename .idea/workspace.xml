@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad40334c-5a6c-4b9b-ae93-1cb2761a469b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/index_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/index_controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index/control.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/index/control.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index/index_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/index/index_controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/lib/util.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/util.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/vistas/app/vis_dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/vistas/app/vis_dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/vistas/app/vis_encuestas.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/vistas/app/vis_encuestas.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/vistas/app/vis_respuesta.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/vistas/app/vis_respuesta.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/vistas/index/vis_comentario.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/vistas/index/vis_comentario.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/vistas/index/vis_encuesta.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/vistas/index/vis_encuesta.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/vistas/index/vis_index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/vistas/index/vis_index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/vistas/index/vis_index_dos.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/vistas/index/vis_index_dos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/vistas/index/vis_index_pre.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/vistas/index/vis_index_pre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/vistas/layout/fotter_app.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/vistas/layout/fotter_app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/vistas/layout/fotter_index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/vistas/layout/fotter_index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/vistas/layout/nav_app.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/vistas/layout/nav_app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/sb-admin-2.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/sb-admin-2.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,11 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index/index_controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+            <state relative-caret-position="306">
+              <caret line="96" column="32" lean-forward="true" selection-start-line="96" selection-start-column="32" selection-end-line="96" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -108,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/lib/util.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+            <state relative-caret-position="-730">
+              <caret line="388" column="36" selection-start-line="388" selection-start-column="36" selection-end-line="388" selection-end-column="36" />
               <folding>
                 <element signature="n#getMailLogin#0;n#!!top" />
                 <element signature="n#quita_acentos#0;n#!!top" />
@@ -230,10 +211,10 @@
         <option value="$PROJECT_DIR$/app/vistas/layout/nav_app.php" />
         <option value="$PROJECT_DIR$/app/vistas/app/vis_encuestas.php" />
         <option value="$PROJECT_DIR$/app/vistas/index/vis_index_pre.php" />
-        <option value="$PROJECT_DIR$/app/lib/util.php" />
         <option value="$PROJECT_DIR$/app/vistas/index/vis_encuesta.php" />
         <option value="$PROJECT_DIR$/app/index/control.php" />
         <option value="$PROJECT_DIR$/app/index/index_controller.php" />
+        <option value="$PROJECT_DIR$/app/lib/util.php" />
       </list>
     </option>
   </component>
@@ -243,7 +224,7 @@
       <path value="$PROJECT_DIR$/app/vendor/composer" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="101" />
     <option name="y" value="-8" />
     <option name="width" value="983" />
@@ -382,7 +363,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../diamex" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -428,7 +409,7 @@
       <workItem from="1561138190305" duration="783000" />
       <workItem from="1561319452927" duration="26000" />
       <workItem from="1561513932963" duration="7306000" />
-      <workItem from="1561603241538" duration="16767000" />
+      <workItem from="1561603241538" duration="17231000" />
     </task>
     <task id="LOCAL-00001" summary="Vista del index">
       <created>1560489421298</created>
@@ -490,7 +471,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110037000" />
+    <option name="totallyTimeSpent" value="110501000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -509,9 +490,9 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32850242" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3279743" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" order="12" visible="true" weight="0.21864952" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.21864952" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -856,18 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/lib/util.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
-          <folding>
-            <element signature="n#getMailLogin#0;n#!!top" />
-            <element signature="n#quita_acentos#0;n#!!top" />
-            <element signature="n#print_preg_tipo1#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/vistas/index/vis_encuesta.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="548">
@@ -891,8 +860,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index/index_controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+        <state relative-caret-position="306">
+          <caret line="96" column="32" lean-forward="true" selection-start-line="96" selection-start-column="32" selection-end-line="96" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/util.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-730">
+          <caret line="388" column="36" selection-start-line="388" selection-start-column="36" selection-end-line="388" selection-end-column="36" />
+          <folding>
+            <element signature="n#getMailLogin#0;n#!!top" />
+            <element signature="n#quita_acentos#0;n#!!top" />
+            <element signature="n#print_preg_tipo1#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>

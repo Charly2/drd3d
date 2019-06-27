@@ -386,7 +386,7 @@ function print_preg_tipo4($pre){?>
                 <div class="cont_resp">
                     <div class="resp_item" style="margin-left: 10px" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="1">
                         <img src="<?=URL_ASSETS?>assets/img/resp/res_d_1.svg" alt="">
-                        <p>Exelente</p>
+                        <p>Excelente</p>
                     </div>
                     <div class="resp_item" style="margin-left: 10px" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="2">
                         <img src="<?=URL_ASSETS?>assets/img/resp/res_d_2.svg" alt="">
