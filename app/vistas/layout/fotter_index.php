@@ -1,27 +1,31 @@
 <!--<a href="#home" class="up_btn scroll"><i class="fas fa-angle-up"></i></a>-->
 
     <script>
-        var aux = window.location.pathname.split('/');
 
+        <?
+            global $_PATH;
 
-        if( aux[2] == "index" && aux[3] == "index"){
-            console.log("index")
-        }else{
-            console.log("NO index")
-            var time = new Date().getTime();
-            $(document.body).bind("mousemove keypress", function(e) {
-                time = new Date().getTime();
-            });
+            if ($_PATH[1]!="index"){?>
+        console.log("NO index")
+        var time = new Date().getTime();
+        $(document.body).bind("mousemove keypress", function(e) {
+            time = new Date().getTime();
+        });
 
-            function refresh() {
-                if(new Date().getTime() - time >= 1000)
-                    window.location.href = "<?=_setUrl('index/borrar')?>";
-                else
-                    setTimeout(refresh, 10000);
+        function refresh() {
+            if(new Date().getTime() - time >= 1000)
+                window.location.href = "<?=_setUrl('index/borrar')?>";
+            else
+                setTimeout(refresh, 10000);
+        }
+
+        setTimeout(refresh, 10000);
+            <?}else{
+
             }
 
-            setTimeout(refresh, 10000);
-        }
+        ?>
+
 
 
 
