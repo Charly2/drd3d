@@ -136,16 +136,13 @@ function repuesta_tipo($ti , $val){
         case '5':
             switch ($val){
                 case '1':
-                    return 'Mala';
+                    return 'Observar al personal';
                     break;
                 case '2':
-                    return 'Regular';
+                    return 'Capacitar al personal';
                     break;
                 case '3':
-                    return 'Buena';
-                    break;
-                case '4':
-                    return 'Muy Buena';
+                    return 'Personal muy bueno';
                     break;
             }
             break;
@@ -422,20 +419,16 @@ function print_preg_tipo5($pre){?>
             <div class="col-md-12">
                 <div class="cont_resp">
                     <div class="resp_item" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="1">
-                        <img src="<?=URL_ASSETS?>assets/img/resp/res_a_1.svg" alt="">
-                        <p>Mala</p>
+                        <img src="<?=URL_ASSETS?>assets/img/resp/res_t_1.svg" alt="">
+                        <p>Observar al personal</p>
                     </div>
                     <div class="resp_item" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="2">
-                        <img src="<?=URL_ASSETS?>assets/img/resp/res_a_2.svg" alt="">
-                        <p>Regular</p>
+                        <img src="<?=URL_ASSETS?>assets/img/resp/res_t_2.svg" alt="">
+                        <p>Capacitar al personal</p>
                     </div>
                     <div class="resp_item" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="3">
-                        <img src="<?=URL_ASSETS?>assets/img/resp/res_a_3.svg" alt="">
-                        <p>Buena</p>
-                    </div>
-                    <div class="resp_item" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="4">
-                        <img src="<?=URL_ASSETS?>assets/img/resp/res_a_4.svg" alt="">
-                        <p>Muy Buena</p>
+                        <img src="<?=URL_ASSETS?>assets/img/resp/res_t_3.svg" alt="">
+                        <p>Personal muy bueno</p>
                     </div>
                 </div>
             </div>

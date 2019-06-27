@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad40334c-5a6c-4b9b-ae93-1cb2761a469b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/lib/util.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/util.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/theme.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +54,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assets/css/theme.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="2017" column="16" selection-start-line="2017" selection-start-column="16" selection-end-line="2017" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/vistas/layout/nav_app.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-118">
@@ -92,22 +101,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/lib/util.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-730">
-              <caret line="388" column="36" selection-start-line="388" selection-start-column="36" selection-end-line="388" selection-end-column="36" />
+            <state relative-caret-position="307">
+              <caret line="430" column="49" lean-forward="true" selection-start-line="430" selection-start-column="49" selection-end-line="430" selection-end-column="49" />
               <folding>
                 <element signature="n#getMailLogin#0;n#!!top" />
                 <element signature="n#quita_acentos#0;n#!!top" />
                 <element signature="n#print_preg_tipo1#0;n#!!top" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/vistas/app/vis_dashboard.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-189">
-              <caret line="19" column="94" selection-start-line="19" selection-start-column="94" selection-end-line="19" selection-end-column="94" />
             </state>
           </provider>
         </entry>
@@ -134,8 +134,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>username</find>
-      <find>Lorem ipsum dolor sit amet,</find>
       <find>localhost</find>
       <find>cometnario</find>
       <find>local</find>
@@ -160,10 +158,12 @@
       <find>welcome-right</find>
       <find>.salir_</find>
       <find>.main_conte</find>
-      <find>index.html</find>
       <find>send_</find>
       <find>dash</find>
       <find>send</find>
+      <find>index.html</find>
+      <find>.resp_item</find>
+      <find>.resp_item img</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -197,7 +197,6 @@
         <option value="$PROJECT_DIR$/app/vistas/index/vis_error.php" />
         <option value="$PROJECT_DIR$/app/vistas/index/vis_prueba.php" />
         <option value="$PROJECT_DIR$/app/vistas/index/vis_index.php" />
-        <option value="$PROJECT_DIR$/public/assets/css/theme.css" />
         <option value="$PROJECT_DIR$/app/vistas/index/vis_comentario.php" />
         <option value="$PROJECT_DIR$/app/vistas/index/vis_index_dos.php" />
         <option value="$PROJECT_DIR$/app/vistas/app/vis_respuesta.php" />
@@ -214,6 +213,7 @@
         <option value="$PROJECT_DIR$/app/vistas/index/vis_encuesta.php" />
         <option value="$PROJECT_DIR$/app/index/control.php" />
         <option value="$PROJECT_DIR$/app/index/index_controller.php" />
+        <option value="$PROJECT_DIR$/public/assets/css/theme.css" />
         <option value="$PROJECT_DIR$/app/lib/util.php" />
       </list>
     </option>
@@ -409,7 +409,7 @@
       <workItem from="1561138190305" duration="783000" />
       <workItem from="1561319452927" duration="26000" />
       <workItem from="1561513932963" duration="7306000" />
-      <workItem from="1561603241538" duration="17231000" />
+      <workItem from="1561603241538" duration="17851000" />
     </task>
     <task id="LOCAL-00001" summary="Vista del index">
       <created>1560489421298</created>
@@ -467,11 +467,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561138340371</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="admin">
+      <created>1561624093216</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1561624093217</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110501000" />
+    <option name="totallyTimeSpent" value="111121000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -694,13 +701,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/css/theme.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="1963" column="23" lean-forward="true" selection-start-line="1963" selection-start-column="23" selection-end-line="1963" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/vistas/index/vis_comentario.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -865,10 +865,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/css/theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="2017" column="16" selection-start-line="2017" selection-start-column="16" selection-end-line="2017" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/lib/util.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-730">
-          <caret line="388" column="36" selection-start-line="388" selection-start-column="36" selection-end-line="388" selection-end-column="36" />
+        <state relative-caret-position="307">
+          <caret line="430" column="49" lean-forward="true" selection-start-line="430" selection-start-column="49" selection-end-line="430" selection-end-column="49" />
           <folding>
             <element signature="n#getMailLogin#0;n#!!top" />
             <element signature="n#quita_acentos#0;n#!!top" />
