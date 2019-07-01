@@ -61,6 +61,11 @@
                             <label for="exampleInputEmail">Texto de la pregunta</label>
                             <input type="email" class="form-control form-control-user" id="exampleInputEmail"  placeholder="Ingrese el texto de la pregunta">
                         </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputEmSSSSSail_new_ssp">Pregunta Opcional</label>
+                            <input type="checkbox" class="form-control form-control-user" id="exampleInputEmSSSSSail_new_ssp"  placeholder="Ingrese el texto de la pregunta">
+                        </div>
                     </div>
                     <div class="col-md-12">
                         <div class="form-group">
@@ -300,6 +305,17 @@
             $('._editar.disabled').data('tipo',_val)
 
             $.post('<?=_setUrl('app/index/update')?>',{id:_id , val:_val,row:'tipo_Pregunta' }).done(function (data) {
+                console.log(data)
+            });
+        });
+
+
+        $('#exampleInputEmSSSSSail_new_ssp').change(function (e) {
+            var _id = $(this).data('id');
+            var _val = $(this).val();
+            $('._editar.disabled').data('tipo',_val)
+
+            $.post('<?=_setUrl('app/index/update')?>',{id:_id , val:_val,row:'rango' }).done(function (data) {
                 console.log(data)
             });
         });
