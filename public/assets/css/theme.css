@@ -2176,7 +2176,7 @@ textarea{
 .row-keyboard {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content:center;
     width: auto;
 }
 
@@ -2279,3 +2279,69 @@ textarea{
     margin: 100px auto 0 auto;
 }
 
+.w250{
+    width: 250px!important;
+}
+
+
+.nets{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    top: -110px;
+}
+
+
+.row-keyboard div{
+    width: 65px;
+    height: 60px;
+}
+
+
+
+.checkbox {
+    background-color: #fff;
+    border: solid 1px #d7d7d7;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    height: 32px;
+    margin-right: 1rem;
+    text-align: center;
+    width: 32px;
+    vertical-align: middle;
+}
+.checkbox svg {
+    margin-top: 6px;
+    stroke: #fff;
+}
+
+.positive {
+    background-color: #009b7a;
+    border-color: #009b7a;
+}
+
+.negative {
+    background-color: #dc4e4e;
+    border-color: #c74545;
+}
+
+.label {
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+
+#ckckc{
+    right: 34px;
+    bottom: -50px;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+}
+
+#ckckc span.label{
+    line-height: 1;
+    text-align: left;
+}

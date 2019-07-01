@@ -62,8 +62,9 @@
                             <td width="50%"><?=$pre['texto']?></td>
                             <td width="50%"><?=repuesta_tipo($pre['tipo_Pregunta'],$pre['valor']);?></td>
                         </tr>
-                        </tbody>
+
                         <?}?>
+                        </tbody>
                     </table>
                 </div>
             </div>

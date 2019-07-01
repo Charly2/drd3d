@@ -85,7 +85,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-8">
                                         <div class="temp-keyboard">
                                             <div class="keyboard  showKey" id="qwerty">
                                                 <div class="row-keyboard">
@@ -110,17 +110,20 @@
                                                     <div id="j" data-value="j"><p>j</p></div>
                                                     <div id="k" data-value="k"><p>k</p></div>
                                                     <div id="l" data-value="l"><p>l</p></div>
-                                                    <div id="m" data-value="m"><p>m</p></div>
+                                                    <div id="ss" data-value="ñ"><p>ñ</p></div>
                                                 </div>
                                                 <div class="row-keyboard">
                                                     <div id="w" data-value="z"><p>z</p></div>
                                                     <div id="x" data-value="x"><p>x</p></div>
                                                     <div id="c" data-value="c"><p>c</p></div>
                                                     <div id="v" data-value="v"><p>v</p></div>
-                                                    <div id="switch" data-value="&nbsp;"><p>___</p></div>
                                                     <div id="b" data-value="b"><p>b</p></div>
                                                     <div id="n" data-value="n"><p>n</p></div>
+                                                    <div id="m" data-value="m"><p>m</p></div>
                                                     <div id="del" data-value="del"><p id="del">Borrar</p></div>
+                                                </div>
+                                                <div class="row-keyboard">
+                                                    <div id="switch" class="w250" data-value="&nbsp;"><p>___</p></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -163,7 +166,7 @@
                                     </div>
                                 </div>
 
-                                <div class="row">
+                                <div class="row mt-4">
                                     <div class="col-md-6">
                                         <div class="temp-keyboard">
 

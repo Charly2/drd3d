@@ -111,7 +111,7 @@ function save(){
     }
 
 
-    $va = sendMail('papapitufo10@gmail.com','Admnistración DRD',"Encuesta",getMailLogin($_SESSION['nombre'],$_SESSION['tel'],$_POST['data'],$_POST['comm'],"1"));
+    $va = sendMail('papapitufo10@gmail.com','Admnistración DRD',"Encuesta",getMailLogin($_SESSION['nombre'],$_SESSION['tel'],$_POST['data'],$_POST['comm'],$_SUC));
 
 
 

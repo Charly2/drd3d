@@ -4,25 +4,24 @@
 
         <?
             global $_PATH;
+           // print_r($_PATH);
+            if ($_PATH[1]=="index" || $_PATH[1]=="encuesta"|| $_PATH[1]=="comentario"){?>
 
-            if ($_PATH[1]!="index"){?>
-        console.log("NO index")
-        var time = new Date().getTime();
-        $(document.body).bind("mousemove keypress", function(e) {
-            time = new Date().getTime();
-        });
+            <?}else{?>
+                var time = new Date().getTime();
+                $(document.body).bind("mousemove keypress", function(e) {
+                    time = new Date().getTime();
+                });
 
-        function refresh() {
-            if(new Date().getTime() - time >= 1000)
-                window.location.href = "<?=_setUrl('index/borrar')?>";
-            else
+                function refresh() {
+                    if(new Date().getTime() - time >= 1000)
+                        window.location.href = "<?=_setUrl('index/borrar')?>";
+                    else
+                        setTimeout(refresh, 10000);
+                }
+
                 setTimeout(refresh, 10000);
-        }
-
-        setTimeout(refresh, 10000);
-            <?}else{
-
-            }
+            <?}
 
         ?>
 

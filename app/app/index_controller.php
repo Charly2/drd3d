@@ -182,14 +182,33 @@ function gra (){
     $and="";
     $join="";
 
+
+    $today = date("d/m/Y");
+    $today = explode('/',$today);
+
+
+
+    $mes = $_PATH[3]?$_PATH[3]:$today[1];
+    $ano = $_PATH[4]?$_PATH[4]:$today[2];
+
+
+    $and = "and e.fecha BETWEEN '$ano-$mes-01' and '$ano-$mes-31' ";
+
+    //die("si");
+
+
+
+
+
+
     if ($suc){
         $join = " INNER JOIN encuesta e on e.id_Encuesta = r.id_Encuesta ";
-        $and = "and e.id_Sucursal = '$suc' ";
+        $and .= "and e.id_Sucursal = '$suc' ";
 
     }
 
 
-    $preg = $db->queryRet("SELECT id_Pregunta,texto,opciones_Respuesta FROM pregunta WHERE estado_Pregunta = 1");
+    $preg = $db->queryRet("SELECT id_Pregunta,texto,opciones_Respuesta,tipo_Pregunta FROM pregunta WHERE estado_Pregunta = 1");
 
     $ar=[];
 
@@ -197,15 +216,20 @@ function gra (){
 
 
         $res = $db->queryRet("SELECT r.valor,count(r.valor) FROM respuesta r $join WHERE r.id_Pregunta = '".$p['id_Pregunta']."' $and group by r.valor");
-        //print_r($res);
+        for ($i=0;$i<sizeof($res);$i++){
+            $res[$i]['label']=repuesta_tipo($p['tipo_Pregunta'],$res[$i][0]);
+
+            //print_r($res[$i]);
+        }
         $p['data']= $res;
         $ar[]=$p;
 
     }
 
+    //prEx($ar);
 
 
-    setViewApp('sucursal_gra',['data'=>$ar]);
+    setViewApp('sucursal_gra',['data'=>$ar,'id_s'=>$suc]);
 }
 
 function export (){

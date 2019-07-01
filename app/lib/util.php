@@ -146,6 +146,9 @@ function repuesta_tipo($ti , $val){
                     break;
             }
             break;
+        case '6':
+            return $val;
+            break;
     }
 }
 
@@ -179,7 +182,9 @@ function sendMail ($to,$name,$sub,$html){
         //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
         //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 
-
+        /*$mail->AddAddress('recipient1@domain.com', 'First Name');
+        $mail->AddAddress('recipient2@domain.com', 'Second Name');
+        $mail->AddAddress('recipient3@domain.com', 'Third Name');*/
 
 
         //Content
