@@ -45,7 +45,7 @@ function newpr(){
 
 
 
-    $result = $db->insert('pregunta',[$_POST['txt'],$_POST['tipo'],$_POST['orden'],1],'texto,tipo_Pregunta,orden,estado_Pregunta');
+    $result = $db->insert('pregunta',[$_POST['txt'],$_POST['tipo'],$_POST['orden'],$_POST['opc'],1],'texto,tipo_Pregunta,orden,rango,estado_Pregunta');
 
 
     print_r($result);

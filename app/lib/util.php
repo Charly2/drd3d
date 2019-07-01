@@ -362,11 +362,11 @@ function print_preg_tipo3($pre){?>
         <div class="row">
             <div class="col-md-12">
                 <div class="cont_resp">
-                    <div class="resp_item" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="1">
+                    <div class="resp_item" data-ios="<?=$pre['rango']?>" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="1">
                         <img src="<?=URL_ASSETS?>assets/img/resp/res_c_1.svg" alt="">
                         <p class="text_verde">Si</p>
                     </div>
-                    <div class="resp_item" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="2">
+                    <div class="resp_item"  data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="2">
                         <img src="<?=URL_ASSETS?>assets/img/resp/res_c_2.svg" alt="">
                         <p class="text_rojo">No</p>
                     </div>

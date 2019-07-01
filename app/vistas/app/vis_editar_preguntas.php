@@ -116,8 +116,14 @@
                     <div class="col-md-12">
                         <div class="form-group">
                             <label for="exampleInputEmail">Texto de la pregunta</label>
-                            <input type="email" class="form-control form-control-user" id="exampleInputEmail_new"  placeholder="Ingrese el texto de la pregunta">
+                            <input type="text" class="form-control form-control-user" id="exampleInputEmail_new"  placeholder="Ingrese el texto de la pregunta">
                         </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail">Pregunta Opcional</label>
+                            <input type="checkbox" class="form-control form-control-user" id="exampleInputEmail_new_ssp"  placeholder="Ingrese el texto de la pregunta">
+                        </div>
+
+
                     </div>
                     <div class="col-md-12">
                         <div class="form-group">
@@ -249,6 +255,7 @@
         $('._save_new').click(function (e) {
             var txt = $('#exampleInputEmail_new').val();
             var tipo = $('#exampleFormControlSelect1_new').val();
+            var exampleInputEmail_new_ssp = $('#exampleInputEmail_new_ssp').val();
 
 
             console.log(txt)
@@ -257,7 +264,7 @@
             var orende =$('#accordion .card:last').data('orden');
 
 
-            $.post('<?=_setUrl('app/index/newpr')?>',{txt:txt , tipo:tipo,orden:orende}).done(function (data) {
+            $.post('<?=_setUrl('app/index/newpr')?>',{txt:txt , tipo:tipo,orden:orende,opc:exampleInputEmail_new_ssp}).done(function (data) {
                 console.log(data)
                 window.location.reload();
             });

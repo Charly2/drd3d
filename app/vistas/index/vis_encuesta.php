@@ -56,7 +56,7 @@
 
                     if ($pre['tipo_Pregunta'] == '6'){?>
 
-                        <div class="container">
+                        <div class="container ssaassa">
                             <div class="row">
                                 <div class="col-md-12">
                                     <h1 class="titulo_pre nets"><?=$pre['texto']?></h1>
@@ -64,7 +64,7 @@
                             </div>
                             <div class="row position-relative">
                                 <div class="col-md-12">
-                                    <textarea name="" class="_com2" cols="30" rows="4"></textarea>
+                                    <textarea name="" class="_com<?=$pre['id_Pregunta']?>" cols="30" rows="4"></textarea>
                                 </div>
                             </div>
                             <div class="row mt-4">
@@ -115,12 +115,12 @@
                             <div class="row">
                                 <div class="col-md-12 float-left ">
                                     <div class="app-btns v4 text-right">
-                                        <a onclick="next_S(this)" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="" class="app-btn align-self-center abntnt">
+                                        <a onclick="next_S(this,<?=$pre['id_Pregunta']?>)" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="" class="app-btn align-self-center abntnt">
                                 <span class="app-btn-icon">
                                     <i class="fa fa-check-double"></i>
                                 </span>
                                             <span class="app-btn-text">
-                                    <small class="display_block">Finalizar<strong>Evaluación</strong></small>
+                                    <small class="display_block" style="line-height: 1.5"><strong>Siguiente</strong></small>
                                 </span>
                                         </a>
 
@@ -264,19 +264,20 @@
 
     $('._Tecom2.keyboard .row-keyboard div').on('click', function(e){
         e.preventDefault();
-        var inputtext = $('._com2').val();
+        $tta = $(this).parents('.ssaassa').find('textarea');
+        var inputtext = $tta.val();
         if (e.target.id == 'del') {
             var temp = inputtext.substring(0, inputtext.length - 1);
             temp = temp.substring(0, temp.length - 1);
             console.log(temp)
             temp =  temp+'|';
-            $('._com2').val(temp);
+            $tta.val(temp);
         }else{
             let temp = $(this).data('value');
             inputtext = inputtext.substring(0, inputtext.length - 1);
             temp = inputtext + temp+'|';
-            $('._com2').removeClass("error");
-            $('._com2').val(temp);
+            $tta.removeClass("error");
+            $tta.val(temp);
         }
     });
 
@@ -306,6 +307,15 @@
         a.txt = $(this).find('p').html();
         a.preg = $(this).parents('.main_conte').find('.titulo_pre').html();
         _DATOS.push(a);
+
+        console.log(a)
+
+        if(a.ios=="on"){
+            console.log($(this).parents('.slide').next().remove());
+
+        }
+
+
         if(_ACTIVO < _TOTAL){
             _ACTIVO++;
             $(this).addClass('acti');
