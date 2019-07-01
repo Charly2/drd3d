@@ -115,7 +115,7 @@
                             <div class="row">
                                 <div class="col-md-12 float-left ">
                                     <div class="app-btns v4 text-right">
-                                        <a onclick="next_S(this,<?=$pre['id_Pregunta']?>)" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="" class="app-btn align-self-center abntnt">
+                                        <a onclick="next_S(this,'_com<?=$pre["id_Pregunta"]?>')" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="" class="app-btn align-self-center abntnt">
                                 <span class="app-btn-icon">
                                     <i class="fa fa-check-double"></i>
                                 </span>
@@ -241,10 +241,10 @@
         }
     });
 
-    function next_S(t){
+    function next_S(t,tt){
         var a = $(t).data();
-        a.value = $('._com2').val();
-        a.txt = $('._com2').val();
+        a.value = $('.'+tt).val();
+        a.txt = $('.'+tt).val();
 
         a.preg = $(t).parents('.main_conte').find('.titulo_pre').html();
 
