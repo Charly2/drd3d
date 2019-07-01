@@ -71,7 +71,7 @@
                                 <option value="3">Tipo 3</option>
                                 <option value="4">Tipo 4</option>
                                 <option value="5">Tipo 5</option>
-                                <option value="5">Tipo 6</option>
+                                <option value="6">Tipo 6</option>
                             </select>
                         </div>
                     </div>
@@ -131,6 +131,7 @@
                                 <option value="3">Tipo 3</option>
                                 <option value="4">Tipo 4</option>
                                 <option value="5">Tipo 5</option>
+                                <option value="6">Tipo 6</option>
                             </select>
                         </div>
                     </div>
@@ -157,6 +158,11 @@
                     <div class="col-md-3 offset-md-4">
                         <h5 class="mb-0 text-center">Tipo 5</h5>
                         <img class="display_block img-fluid" src="<?=URL_ASSETS?>/img/t_5.jpg" alt="">
+                    </div>
+
+                    <div class="col-md-3">
+                        <h5 class="mb-0 text-center">Tipo 5</h5>
+                        <h2>TEXTO</h2>
                     </div>
                 </div>
                 <div class="row">
