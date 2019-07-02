@@ -83,6 +83,13 @@ function save(){
 
     global $_SUC;
 
+    if($_POST['urg'] == 'true'){
+        $_UR = "--URGENTE--";
+    }else{
+        $_UR = "Encuesta";
+    }
+
+
 
     $db = new Dao();
     $db->connect();
@@ -111,7 +118,7 @@ function save(){
     }
 
 
-    $va = sendMail('papapitufo10@gmail.com','Admnistración DRD',"Encuesta",getMailLogin($_SESSION['nombre'],$_SESSION['tel'],$_POST['data'],$_POST['comm'],$_SUC));
+    $va = sendMail($_UR,'papapitufo10@gmail.com','Admnistración DRD',"Encuesta",getMailLogin($_SESSION['nombre'],$_SESSION['tel'],$_POST['data'],$_POST['comm'],$_SUC));
 
 
 

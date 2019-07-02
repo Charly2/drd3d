@@ -153,7 +153,7 @@ function repuesta_tipo($ti , $val){
 }
 
 
-function sendMail ($to,$name,$sub,$html){
+function sendMail ($_UR,$to,$name,$sub,$html){
 
 
 
@@ -173,7 +173,7 @@ function sendMail ($to,$name,$sub,$html){
         $mail->Port = 587;                                    // TCP port to connect to
 
         //Recipients
-        $mail->setFrom('cendicontacto@gmail.com', 'Mailer');
+        $mail->setFrom('cendicontacto@gmail.com', $_UR);
         $mail->addAddress($to, $name);     // Add a recipient
         //$mail->addReplyTo('info@example.com', 'Information');
 
@@ -309,19 +309,19 @@ function print_preg_tipo1($pre){?>
                 <div class="cont_resp">
                     <div class="resp_item" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="1">
                         <img src="<?=URL_ASSETS?>assets/img/resp/res_a_1.svg" alt="">
-                        <p>Mala</p>
+                        <p style="color:#009b7a">Muy Buena</p>
                     </div>
                     <div class="resp_item" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="2">
-                        <img src="<?=URL_ASSETS?>assets/img/resp/res_a_2.svg" alt="">
-                        <p>Regular</p>
+                        <img src="<?=URL_ASSETS?>assets/img/resp/res_a_3.svg" alt="">
+                        <p style="color: #7fef37">Buena</p>
                     </div>
                     <div class="resp_item" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="3">
-                        <img src="<?=URL_ASSETS?>assets/img/resp/res_a_3.svg" alt="">
-                        <p>Buena</p>
+                        <img src="<?=URL_ASSETS?>assets/img/resp/res_a_2.svg" alt="">
+                        <p style="color: #f2db36">Regular</p>
                     </div>
                     <div class="resp_item" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="4">
                         <img src="<?=URL_ASSETS?>assets/img/resp/res_a_4.svg" alt="">
-                        <p>Muy Buena</p>
+                        <p style="color:#dc3545">Mala</p>
                     </div>
                 </div>
             </div>
@@ -424,16 +424,16 @@ function print_preg_tipo5($pre){?>
             <div class="col-md-12">
                 <div class="cont_resp">
                     <div class="resp_item" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="1">
-                        <img src="<?=URL_ASSETS?>assets/img/resp/res_t_1.svg" alt="">
-                        <p>Observar al personal</p>
+                        <img src="<?=URL_ASSETS?>assets/img/resp/res_t_3.svg" alt="">
+                        <p>Personal muy bueno</p>
                     </div>
                     <div class="resp_item" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="2">
                         <img src="<?=URL_ASSETS?>assets/img/resp/res_t_2.svg" alt="">
                         <p>Capacitar al personal</p>
                     </div>
                     <div class="resp_item" data-id_Pregunta="<?=$pre['id_Pregunta']?>" data-value="3">
-                        <img src="<?=URL_ASSETS?>assets/img/resp/res_t_3.svg" alt="">
-                        <p>Personal muy bueno</p>
+                        <img src="<?=URL_ASSETS?>assets/img/resp/res_t_1.svg" alt="">
+                        <p>Observar al personal</p>
                     </div>
                 </div>
             </div>

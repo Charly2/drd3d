@@ -332,7 +332,7 @@
     
     function send(e) {
         $(e).attr('disabled',true);
-        $.post( "<?=_setUrl('index/save');?>", {data:_DATOS, comm : $('#_com').val() }).done(function( data ) {
+        $.post( "<?=_setUrl('index/save');?>", {data:_DATOS, comm : $('#_com').val() ,urg:$('.checkbox').hasClass('positive')}).done(function( data ) {
             console.log(data)
 
 
