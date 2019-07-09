@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ad40334c-5a6c-4b9b-ae93-1cb2761a469b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index/index_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/index/index_controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lib/util.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/util.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/vistas/index/vis_comentario.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/vistas/index/vis_comentario.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/vistas/index/vis_encuesta.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/vistas/index/vis_encuesta.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/img/resp/res_a_1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/img/resp/res_a_1.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/img/resp/res_a_2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/img/resp/res_a_2.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/img/resp/res_a_3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/img/resp/res_a_3.svg" afterDir="false" />
@@ -57,7 +53,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/vistas/index/vis_encuesta.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
+            <state relative-caret-position="5678">
               <caret line="334" column="125" selection-start-line="334" selection-start-column="86" selection-end-line="334" selection-end-column="125" />
             </state>
           </provider>
@@ -66,17 +62,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/vistas/index/vis_comentario.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="38" column="47" lean-forward="true" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+            <state relative-caret-position="646">
+              <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/index/index_controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="55">
+              <caret line="116" selection-start-line="116" selection-end-line="116" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/index/index_controller.php">
+        <entry file="file://$PROJECT_DIR$/../curso/src/AccessHandler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="92" column="3" selection-start-line="92" selection-start-column="3" selection-end-line="92" selection-end-column="3" />
+            <state relative-caret-position="204">
+              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -84,14 +89,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/lib/util.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
+            <state relative-caret-position="2533">
               <caret line="155" column="17" selection-start-line="155" selection-start-column="9" selection-end-line="155" selection-end-column="17" />
               <folding>
                 <element signature="n#quita_acentos#0;n#!!top" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -218,9 +219,9 @@
       <path value="$PROJECT_DIR$/app/vendor/composer" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1719" />
-    <option name="y" value="305" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="390" />
+    <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="754" />
   </component>
@@ -230,7 +231,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -352,6 +352,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -409,7 +410,8 @@
       <workItem from="1561931913323" duration="4543000" />
       <workItem from="1561946389781" duration="14370000" />
       <workItem from="1562034480097" duration="149000" />
-      <workItem from="1562035019567" duration="4728000" />
+      <workItem from="1562035019567" duration="5488000" />
+      <workItem from="1562638882990" duration="347000" />
     </task>
     <task id="LOCAL-00001" summary="Vista del index">
       <created>1560489421298</created>
@@ -534,13 +536,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138941000" />
+    <option name="totallyTimeSpent" value="140048000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1374" y="305" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.204236" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14552239" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -553,7 +555,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3993559" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2647374" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.21864952" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -593,7 +595,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="admin" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/vistas/layout_admin.php" />
     <entry file="file://$PROJECT_DIR$/app/vistas/index/vis_error_custom.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -882,6 +883,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/vistas/index/vis_encuesta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5678">
+          <caret line="334" column="125" selection-start-line="334" selection-start-column="86" selection-end-line="334" selection-end-column="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/vistas/index/vis_comentario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/util.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2533">
+          <caret line="155" column="17" selection-start-line="155" selection-start-column="9" selection-end-line="155" selection-end-column="17" />
+          <folding>
+            <element signature="n#quita_acentos#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/vistas/layout/fotter_index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -903,38 +928,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/vistas/index/vis_encuesta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="334" column="125" selection-start-line="334" selection-start-column="86" selection-end-line="334" selection-end-column="125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/vistas/index/vis_comentario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="38" column="47" lean-forward="true" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/lib/util.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="155" column="17" selection-start-line="155" selection-start-column="9" selection-end-line="155" selection-end-column="17" />
-          <folding>
-            <element signature="n#quita_acentos#0;n#!!top" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/index/index_controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="92" column="3" selection-start-line="92" selection-start-column="3" selection-end-line="92" selection-end-column="3" />
+        <state relative-caret-position="55">
+          <caret line="116" selection-start-line="116" selection-end-line="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../curso/src/AccessHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
         </state>
       </provider>
     </entry>
